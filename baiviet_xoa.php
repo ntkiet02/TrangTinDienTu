@@ -10,7 +10,7 @@
 		$cmd->bindValue(':ID', $id);
 		$result = $cmd->execute();
 		
-		$message = 'Đã xóa bài viết thành công!';
+		$message = 'Đã xóa bài viết thành công rùi!';
 		include_once 'success.php';
 	}
 	catch(PDOException $e)

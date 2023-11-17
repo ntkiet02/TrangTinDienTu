@@ -16,7 +16,7 @@
 			<?php include_once 'navbar.php'; ?>
 			
 			<div class="card mt-3">
-				<h5 class="card-header">Sửa bài viết</h5>
+				<h5 class="card-header">Sửa bài viết nè</h5>
 				<div class="card-body">
 					<?php
 						$id = $_GET['id'];
