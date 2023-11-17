@@ -2,7 +2,7 @@
 	// Tạo kết nối đến CSDL
 	$dns = 'mysql:host=127.0.0.1;dbname=trangtin;charset=utf8mb4';
 	$user = 'root';
-	$pass = 'vertrigo';
+	$pass = '';
 	$option = ['PDO::ATTR_ERRMODE' => 'PDO::ERRMODE_EXCEPTION'];
 	$conn = null;
 	
