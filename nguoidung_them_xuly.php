@@ -20,7 +20,7 @@
 		$cmd->bindValue(':Khoa', $Khoa);
 		$result = $cmd->execute();
 		
-		header('Location: nguoidung.php');
+		header("Location: nguoidung.php");
 	}
 	catch(PDOException $e)
 	{
