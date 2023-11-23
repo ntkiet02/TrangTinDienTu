@@ -15,5 +15,9 @@
 		echo $e->getMessage();
 	}
 	
-	session_start();
+	if(session_status() === PHP_SESSION_NONE)
+	{
+		session_start();
+	}
+	date_default_timezone_set('Asia/Ho_Chi_Minh');
 ?>
