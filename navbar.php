@@ -66,10 +66,17 @@
 					}
 				?>
 			</ul>
-			<form class="d-flex" role="search">
-				<input class="form-control me-2" type="search" placeholder="Bạn muốn tìm gì?" aria-label="Search" />
-				<button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
-			</form>
+			<form method="GET" action="baiviet_timkiem.php" class="mb-3">
+					<?php if (isset($chude)) : ?>
+						<input type="hidden" name="chude" value="<?php echo $chude; ?>">
+					<?php endif; ?>
+
+					<div class="input-group">
+						<input class= "search js-search form-control form-control-rounded me-sm-2" type="text" name="tu_khoa" class="form-control" placeholder="Nhập từ khóa tìm kiếm" value="<?php echo isset($tu_khoa) ? $tu_khoa : ''; ?>" />
+
+						<button type="submit" class="btn btn-primary">Tìm kiếm</button>
+					</div>
+			</form></ul>
 		</div>
 	</div>
 </nav>
