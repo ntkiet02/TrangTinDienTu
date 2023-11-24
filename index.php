@@ -30,7 +30,7 @@ require_once 'thuvien.php';
 						$cmdBV = $conn->prepare($sqlBV);
 						$cmdBV->execute();
 						$BVlist = $cmdBV->fetchAll();
-						foreach (array_chunk($BVlist, 4) as $valuecha) {
+						foreach (array_chunk($BVlist, 3) as $valuecha) {
 							echo '<div class="col-md-4">';
 							foreach ($valuecha as $valuecon) {
 								echo '	<article class="card mb-4">
@@ -53,7 +53,7 @@ require_once 'thuvien.php';
 							echo '</div>';
 						}
 						?>
-						</article>
+						
 					</div>
 
 				</div>
