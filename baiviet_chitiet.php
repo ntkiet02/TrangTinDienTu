@@ -30,7 +30,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<meta name="description" content="Hãy đọc tin tức mõi ngày giúp bạn tốn thời gian" /><!-- Hiện cái n-->
+	<meta name="description" content="Hãy đọc tin tức mỗi ngày giúp bạn mở rộng kiến thức!" /><!-- Hiện cái n-->
 	<meta name="author" content="Nguyễn Trí Kiệt" />
 	<title><?php echo $resultBV['TieuDe'];?> - iOlds</title>
 	<link href="css/app.css" rel="stylesheet" />
