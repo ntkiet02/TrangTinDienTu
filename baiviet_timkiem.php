@@ -1,7 +1,7 @@
 <?php
 require_once 'ketnoi.php';
 require_once 'thuvien.php';
-// Xử lý tìm kiếm
+
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $chude = isset($_GET['chude']) ? $_GET['chude'] : '';
     $tu_khoa = isset($_GET['tu_khoa']) ? $_GET['tu_khoa'] : '';
@@ -85,8 +85,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 <?php foreach ($result as $baiviet) : ?>
                     <li class="baiviet-item">
                         <h3><a href="baiviet.php?id=<?php echo $baiviet['ID']; ?>"><?php echo $baiviet['TieuDe']; ?></a></h3>
-                        <!-- <p>Chủ đề: ?php echo $baiviet['TenChuDe']; ?></p>
-                        <p>Tác giả: ?php echo $baiviet['HoVaTen']; ?></p> -->
                      <?php   echo '<article class="card mb-4">
                                 <header class="card-header">
                                 <div class="card-meta">
@@ -109,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 <?php endforeach; ?>
             </ul>
         <?php else : ?>
-            <p>Không tìm thấy kết quả nào</p>
+            <p>Không tìm thấy kết quả</p>
         <?php endif; ?>
     <?php endif; ?>
     </div>
