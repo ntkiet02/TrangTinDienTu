@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             <ul class="baiviet-list">
                 <?php foreach ($result as $baiviet) : ?>
                     <li class="baiviet-item">
-                        <h3><a href="baiviet.php?id=<?php echo $baiviet['ID']; ?>"><?php echo $baiviet['TieuDe']; ?></a></h3>
+                        <!-- <h3><a href="baiviet.php?id=<?php echo $baiviet['ID']; ?>"><?php echo $baiviet['TieuDe']; ?></a></h3> -->
                      <?php   echo '<article class="card mb-4">
                                 <header class="card-header">
                                 <div class="card-meta">
