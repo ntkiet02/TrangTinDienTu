@@ -84,15 +84,6 @@
 					<?php
 					}
 					?>
-
-					<!-- <li class="nav-item">
-							<a class="nav-link" href="dangnhap.php">Đăng nhập</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="dangky.php">Đăng ký</a>
-						</li> -->
-				
-				<!-- Mã HTML -->
 				<form method="GET" action="baiviet_timkiem.php" class="mb-3">
 					<?php if (isset($chude)) : ?>
 						<input type="hidden" name="chude" value="<?php echo $chude; ?>">
@@ -103,7 +94,10 @@
 
 						<button type="submit" class="btn btn-primary">Tìm kiếm</button>
 					</div>
-				</form></ul>
+				</form>
+				
+			
+			</ul>
 			</div>
 		</div>
 	</nav>

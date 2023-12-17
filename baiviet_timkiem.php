@@ -30,8 +30,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     }
 
     $cmd->execute();
-    $result = $cmd->fetchAll();
+     $result = $cmd->fetchAll();
 }
+
+
 ?>
 
 <!DOCTYPE html>

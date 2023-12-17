@@ -2,26 +2,7 @@
 require_once 'ketnoi.php';
 
 // Check if the id parameter is provided
-if (isset($_GET['id'])) {
-	$article_id = $_GET['id'];
 
-	// Retrieve article details from the database
-	$sql = 'SELECT * FROM tbl_baiviet WHERE ID = :article_id';
-	$stmt = $conn->prepare($sql);
-	$stmt->bindParam(':article_id', $article_id);
-	$stmt->execute();
-	$article = $stmt->fetch();
-
-	// Display the article content
-	if ($article) {
-		echo '<h1>' . $article['TieuDe'] . '</h1>';
-		echo '<p>' . $article['NoiDung'] . '</p>';
-	} else {
-		echo '<p>Bài viết không tồn tại</p>';
-	}
-} else {
-	echo '<p>Không tìm thấy bài viết</p>';
-}
 ?>
 
 <!DOCTYPE html>
