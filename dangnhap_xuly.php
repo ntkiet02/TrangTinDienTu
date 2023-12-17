@@ -27,7 +27,8 @@
 				$_SESSION['HoVaTen'] = $result['HoVaTen'];
 				$_SESSION['QuyenHan'] = $result['QuyenHan'];
 				
-				// Quay về trang chủ
+				if($_SESSION['QuyenHan'] == 1){header("Location: adminindex.php");}
+				else
 				header("Location: index.php");
 			}
 		}
