@@ -8,7 +8,7 @@
 				<li class="nav-item"><a class="nav-link" href="page-contact.html">Contact</a></li>
 			</ul>
 			<div class="copy">
-				&copy; 2023 by Nguyễn Trí Kiệt
+				&copy; 2023 by Nghĩa Nghi Nga Hân Kiệt
 			</div>
 		</div>
 </footer>
